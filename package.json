@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "update:feeds": "tsx scripts/update-feeds.ts",
-    "ui:diff": "tsx scripts/ui-diff.ts"
+    "ui:diff": "tsx scripts/ui-diff.ts",
+    "ui:smoke": "tsx scripts/ui-smoke.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
