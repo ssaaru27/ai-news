@@ -1,0 +1,38 @@
+[
+  {
+    "id": "d2bcdd5c620746f279574c7223640470d0ef02e5",
+    "title": "Making AI work for everyone, everywhere: our approach to localization",
+    "url": "https://openai.com/index/our-approach-to-localization",
+    "sourceName": "OpenAI Blog",
+    "sourceUrl": "https://openai.com/news/",
+    "category": "research",
+    "publishedAt": "2026-02-06T10:00:00.000Z",
+    "excerpt": "OpenAI shares its approach to AI localization, showing how globally shared frontier models can be adapted to local languages, laws, and cultures without compromising safety.",
+    "score": 0.279997,
+    "trendingScore": 0.321997
+  },
+  {
+    "id": "3c64178d7a910c91fe945e9c6ba39dd3fd2f4666",
+    "title": "Korea privacy policy",
+    "url": "https://openai.com/policies/kr-privacy-policy",
+    "sourceName": "OpenAI Blog",
+    "sourceUrl": "https://openai.com/news/",
+    "category": "research",
+    "publishedAt": "2026-02-06T10:00:00.000Z",
+    "excerpt": "Korea privacy policy",
+    "score": 0.279997,
+    "trendingScore": 0.321997
+  },
+  {
+    "id": "a1a0006b0b16670678cf55a047410581c5546f32",
+    "title": "“This is science!” – MIT president talks about the importance of America’s research enterprise on GBH’s Boston Public Radio",
+    "url": "https://news.mit.edu/2026/science-mit-president-talks-about-importance-americas-research-enterprise-gbhs-boston-public",
+    "sourceName": "MIT News - AI",
+    "sourceUrl": "https://news.mit.edu/topic/artificial-intelligence2",
+    "category": "academia",
+    "publishedAt": "2026-02-06T17:38:22.000Z",
+    "excerpt": "MIT faculty join The Curiosity Desk to discuss football, math, Olympic figure skating, AI and the quest to cure ovarian cancer.",
+    "score": 0.277845,
+    "trendingScore": 0.319522
+  }
+]

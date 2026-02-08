@@ -1,0 +1,51 @@
+name: Update Feeds
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feeds
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Update feeds
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: pnpm update:feeds
+
+      - name: Commit and push if changed
+        run: |
+          if [[ -n "$(git status --porcelain public/feed.json public/trending.json public/sitemap.xml public/robots.txt)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/feed.json public/trending.json public/sitemap.xml public/robots.txt
+            git commit -m "chore: update feeds"
+            git push
+          else
+            echo "No feed changes."
+          fi
