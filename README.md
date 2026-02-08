@@ -58,6 +58,14 @@ pnpm lint
 pnpm build
 ```
 
+6. Run visual regression helper:
+
+```bash
+pnpm ui:diff
+```
+
+Artifacts are written to `.artifacts/current.png` and `.artifacts/diff.png`.
+
 ## Deploy to Cloudflare Pages
 
 Use the following settings in Cloudflare Pages:

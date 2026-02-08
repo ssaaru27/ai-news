@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update:feeds": "tsx scripts/update-feeds.ts"
+    "update:feeds": "tsx scripts/update-feeds.ts",
+    "ui:diff": "tsx scripts/ui-diff.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -24,11 +25,16 @@
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.15.0",
     "eslint-config-next": "^15.0.3",
+    "pixelmatch": "^5.3.0",
+    "playwright": "^1.54.2",
+    "pngjs": "^7.0.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "tsx": "^4.19.2",
